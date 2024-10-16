@@ -1,8 +1,10 @@
 from django.test import TestCase, RequestFactory
 from django.http import HttpResponse
-from django.contrib.auth.models import User
-from google_analytics_django.middleware import GoogleAnalyticsMiddleware
+from django.contrib.auth import get_user_model
+from google_analytics.middleware import GoogleAnalyticsMiddleware
 from google_analytics_django import conf
+
+User = get_user_model()
 
 
 class GoogleAnalyticsMiddlewareTest(TestCase):

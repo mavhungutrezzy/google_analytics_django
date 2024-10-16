@@ -1,0 +1,21 @@
+[run]
+source = google_analytics_django
+omit = 
+    *migrations*
+    *tests*
+    *apps.py
+    *wsgi.py
+    *asgi.py
+    *__init__.py
+    *admin.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    pass
+    except ImportError:
+    def __str__
