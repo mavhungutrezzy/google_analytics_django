@@ -1,0 +1,14 @@
+<script async
+        src="https://www.googletagmanager.com/gtag/js?id={{ GOOGLE_ANALYTICS_PROPERTY_ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ GOOGLE_ANALYTICS_PROPERTY_ID }}', {
+    'anonymize_ip': {{ GOOGLE_ANALYTICS_ANONYMIZE_IP|lower }},
+    'cookie_expires': {{ GOOGLE_ANALYTICS_COOKIE_EXPIRES }},
+    'sample_rate': {{ GOOGLE_ANALYTICS_SAMPLE_RATE }},
+    'site_speed_sample_rate': {{ GOOGLE_ANALYTICS_SITE_SPEED_SAMPLE_RATE }}
+  });
+</script>
