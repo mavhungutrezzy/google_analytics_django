@@ -1,4 +1,3 @@
-````markdown
 # Google Analytics Django
 
 A full-featured Django package for easy integration of Google Analytics into your Django projects.
@@ -20,7 +19,6 @@ A full-featured Django package for easy integration of Google Analytics into you
 ```bash
 pip install google-analytics-django
 ```
-````
 
 2. Add 'google_analytics_django' to your INSTALLED_APPS in settings.py:
 
@@ -124,18 +122,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-```
 
 This README provides a comprehensive guide to your Google Analytics Django package. It covers:
-
-1. An overview of features
-2. Installation instructions
-3. Configuration options
-4. Basic usage with template tags
-5. Explanation of the middleware
-6. Information on debug mode and staff exclusion
-7. Advanced usage examples
-8. Contribution guidelines
-9. License information
-
 ```
