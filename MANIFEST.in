@@ -17,3 +17,6 @@ recursive-include google_analytics_django *.py
 # Exclude unwanted files (optional)
 exclude *.pyc
 exclude __pycache__
+exclude *.ruff_cache
+exclude *.vscode
+

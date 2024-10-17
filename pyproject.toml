@@ -1,7 +1,7 @@
 [project]
 name = "google-analytics-django"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Django package to integrate Google Analytics."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

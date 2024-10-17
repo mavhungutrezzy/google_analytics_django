@@ -2,26 +2,20 @@ from setuptools import setup, find_packages
 
 setup(
     name="google-analytics-django",
-    version="0.1",
-    packages=find_packages(),
-    include_package_data=True,  
-    install_requires=[
-        "Django>=5.1.2",
-    ],
-    classifiers=[
-        "Framework :: Django",
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.7',  
-    author="Adivhaho Mavhungu",
-    author_email="adivhahomavhungu@outlook.com",
+    version="0.1.0",
     description="A Django package to integrate Google Analytics.",
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    url="https://github.com/mavhungutrezzy/google_analytics_django",  
-    project_urls={
-        "Bug Tracker": "https://github.com/mavhungutrezzy/google_analytics_django/issues", 
-    },
+    packages=find_packages(
+        include=["google_analytics_django", "google_analytics_django.*"]
+    ),
+    install_requires=[
+        "coverage>=7.6.3",
+        "django>=5.1.2",
+        "djlint>=1.35.2",
+        "pre-commit>=4.0.1",
+        "ruff>=0.6.9",
+        "setuptools>=75.2.0",
+    ],
+    python_requires=">=3.12",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
 )
