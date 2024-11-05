@@ -1,12 +1,29 @@
 [project]
 name = "google-analytics-django"
 version = "0.1.0"
-description = "A Django package to integrate Google Analytics."
+description = "A Django package to integrate Google Analytics seamlessly."
 readme = "README.md"
 requires-python = ">=3.12"
+keywords = ["django", "google-analytics", "analytics", "web-tracking", "django-integration"]
+license = {text = "MIT"}
+authors = [{name = "Adivhaho Mavhungu", email = "adivhahomavhungu@outlook.com"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Only production dependencies listed here
 dependencies = [
+    "django>=5.0,<6.0"
+]
+
+[project.optional-dependencies]
+dev = [
     "coverage>=7.6.3",
-    "django>=5.1.2",
     "djlint>=1.35.2",
     "pre-commit>=4.0.1",
     "ruff>=0.6.9",
