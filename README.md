@@ -1,6 +1,7 @@
 # Google Analytics Django
-
 A comprehensive Django package for seamless integration of Google Analytics into your Django projects, supporting Google Analytics 4 (GA4).
+
+[![Published on Django Packages](https://img.shields.io/badge/Published%20on-Django%20Packages-0c3c26)](https://djangopackages.org/packages/p/google_analytics_django/)
 
 ## Features
 
