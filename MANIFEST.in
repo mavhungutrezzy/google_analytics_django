@@ -1,5 +1,5 @@
 include LICENSE
 include README.md
 include CHANGELOG.md
-recursive-include google_analytics_django/templates *
-recursive-include google_analytics_django/templatetags *
+recursive-include src/google_analytics_django/templates *
+recursive-include src/google_analytics_django/templatetags *
