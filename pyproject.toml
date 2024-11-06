@@ -1,31 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel", "pytoml"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "google-analytics-django"
-version = "0.1.1"
+version = "0.1.3"
 description = "A Django package to integrate Google Analytics seamlessly."
 readme = "README.md"
-requires-python = ">=3.12"
-keywords = ["django", "google-analytics", "analytics", "web-tracking", "django-integration"]
+requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Adivhaho Mavhungu", email = "adivhahomavhungu@outlook.com"}]
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Framework :: Django",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+authors = [
+    {name = "Adivhaho Mavhungu", email = "adivhahomavhungu@outlook.com"}
 ]
-
-# Only production dependencies listed here
-dependencies = [
-    "django>=5.0,<6.0"
+maintainers = [
+    {name = "Adivhaho Mavhungu", email = "adivhahomavhungu@outlook.com"}
 ]
+dependencies = ["django>=5.0,<6.0"]
 
 [project.optional-dependencies]
-dev = [
-    "coverage>=7.6.3",
-    "djlint>=1.35.2",
-    "pre-commit>=4.0.1",
-    "ruff>=0.6.9",
-    "setuptools>=75.2.0",
+dev = ["coverage>=7.6.3", "djlint>=1.35.2", "pre-commit>=4.0.1", "ruff>=0.6.9", "setuptools>=75.2.0"]
+
+[project.urls]
+"Source" = "https://github.com/mavhungutrezzy/google-analytics-django"
+"Bug Tracker" = "https://github.com/mavhungutrezzy/google-analytics-django/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+google_analytics_django = [
+    "templates/*",
+    "templatetags/*",
 ]

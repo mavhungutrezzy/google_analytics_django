@@ -1,7 +1,7 @@
 from django.test import TestCase, RequestFactory
 from django.contrib.auth import get_user_model
-from google_analytics import utils
-from google_analytics_django import conf
+from src.google_analytics_django import utils
+from src.google_analytics_django import conf
 
 User = get_user_model()
 

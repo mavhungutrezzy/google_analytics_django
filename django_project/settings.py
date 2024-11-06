@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "google_analytics",
+    "google_analytics_django",
 ]
 
 MIDDLEWARE = [
@@ -48,9 +48,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "google_analytics_django.middleware.GoogleAnalyticsMiddleware"
 ]
 
-ROOT_URLCONF = "google_analytics_django.urls"
+ROOT_URLCONF = "django_project.urls"
 
 TEMPLATES = [
     {
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "google_analytics_django.wsgi.application"
+WSGI_APPLICATION = "django_project.wsgi.application"
 
 
 # Database

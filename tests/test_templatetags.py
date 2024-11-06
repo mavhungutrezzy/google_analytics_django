@@ -1,7 +1,7 @@
 from django.test import TestCase, RequestFactory
 from django.template import Context, Template
 from django.contrib.auth.models import User
-from google_analytics_django import conf
+from src.google_analytics_django import conf
 
 
 class GoogleAnalyticsTemplateTagTest(TestCase):

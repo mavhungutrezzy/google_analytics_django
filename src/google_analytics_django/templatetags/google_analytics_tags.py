@@ -1,6 +1,6 @@
 from django import template
 from django.template.loader import render_to_string
-from google_analytics.utils import get_ga_context, should_track
+from google_analytics_django.utils import get_ga_context, should_track
 
 register = template.Library()
 

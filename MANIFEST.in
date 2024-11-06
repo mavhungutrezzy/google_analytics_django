@@ -1,22 +1,5 @@
-# Include the README and LICENSE files
-include README.md
 include LICENSE
-
-# Include all *.txt and *.rst files
-include *.txt
-include *.rst
-
-# Include app directory (google_analytics) with all Python files, templates, and static files
-recursive-include google_analytics *.py
-recursive-include google_analytics/templates *
-recursive-include google_analytics/static *
-
-# Include the google_analytics_django directory containing settings and URLs
-recursive-include google_analytics_django *.py
-
-# Exclude unwanted files (optional)
-exclude *.pyc
-exclude __pycache__
-exclude *.ruff_cache
-exclude *.vscode
-
+include README.md
+include CHANGELOG.md
+recursive-include google_analytics_django/templates *
+recursive-include google_analytics_django/templatetags *
