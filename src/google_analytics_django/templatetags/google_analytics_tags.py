@@ -28,6 +28,6 @@ def google_analytics(context):
 
     ga_context = get_ga_context()
 
-    template_name = "google_analytics/analytics_gtag.html"
+    template_name = "google_analytics_django/analytics_gtag.html"
 
     return render_to_string(template_name, ga_context)
