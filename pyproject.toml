@@ -21,8 +21,8 @@ dependencies = ["django>=5.0,<6.0"]
 dev = ["coverage>=7.6.3", "djlint>=1.35.2", "pre-commit>=4.0.1", "ruff>=0.6.9", "setuptools>=75.2.0"]
 
 [project.urls]
-"Source" = "https://github.com/mavhungutrezzy/google-analytics-django"
-"Bug Tracker" = "https://github.com/mavhungutrezzy/google-analytics-django/issues"
+"Source" = "https://github.com/mavhungutrezzy/google_analytics_django"
+"Bug Tracker" = "https://github.com/mavhungutrezzy/google_analytics_django/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
