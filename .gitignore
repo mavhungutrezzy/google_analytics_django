@@ -11,3 +11,6 @@ wheels/
 .ruff_cache
 .coverage
 .coveragerc
+
+.sqlite3
+.db
